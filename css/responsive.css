@@ -1,0 +1,9 @@
+/* navbar responsive styles */
+@media screen and (max-width: 576px){
+      .menu-container, .menu{
+        flex-direction: column;
+      }
+      .menu{
+        margin-top: 20px;
+      }
+}
