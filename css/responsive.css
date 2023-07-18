@@ -4,6 +4,10 @@
         flex-direction: column;
       }
       .menu{
-        margin-top: 20px;
+        margin-top: 30px;
+      }
+      .banner-container{
+        flex-direction: column;
+        flex-direction: row-reverse;
       }
 }
