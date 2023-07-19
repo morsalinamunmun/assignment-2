@@ -63,6 +63,9 @@ ul li{
     align-items: center;
     gap: 40px;
 }
+ul li a{
+    align-items: center;
+}
 .menu li, a{
     text-decoration: none;
     color: #3C354F;
@@ -75,25 +78,23 @@ ul li{
     padding: 10px;
     
 }
-.follow-menu i{
-    color: #F61C0D;
-}
+
 /* banner styles css */
 .banner-container{
     max-width: 1000px;
     margin: 30px auto;
     display: flex;
-    gap: 48px;
+    align-items: center;
+    gap: 40px;
 }
 .banner-text{
     width: 48%;
-    padding-top: 100px;
 }
 .banner-img{
     width: 48%;
 }
 .banner-text ul li{
-    margin-top: 10px;
+    margin-top: 0px;
     list-style: none;
     color: #534C64;
     font-weight: 500;
@@ -121,25 +122,28 @@ ul li{
     height: auto;
 }
 /* gammer-person section css */
-.gammer-person-section{
+.gamer-person-section{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    padding: 50px;
+    
+}
+.gamer-person{
     max-width: 1000px;
     margin: 0 auto;
-}
-.gammer-person{
     display: flex;
     gap: 60px;
 }
-.gammer-img{
+.gamer-img{
     width: 50%;
 }
-.gammer-img img{
+.gamer-img img{
     width: 100%;
 }
-.gammer-text{
+.gamer-text{
     width: 50%;
     text-align: right;
 }
-.gammer-text h3{
+.gamer-text h3{
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     color: transparent;
     -webkit-background-clip: text;
@@ -147,12 +151,12 @@ ul li{
     font-weight: 700;
     margin-bottom: 10px;
 }
-.gammer-text p{
+.gamer-text p{
     color: #534C64;
     font-size: 0.8rem;
     line-height: 25px
 }
-.gammer-text .unleash{
+.gamer-text .unleash{
     color: #534C64;
     font-size: 1rem;
     font-weight: 700;
@@ -161,7 +165,7 @@ ul li{
 /* games-video section css */
 .games-container{
     max-width: 1000px;
-    margin: 100px auto;
+    margin: 0px auto;
 }
 .games-container h2{
     color: #0B0223;
@@ -182,7 +186,7 @@ ul li{
     gap: 10px;
 }
 .game-card{
-    width: 25%;
+    width: 30%;
 }
 .game-card img{
     width: 100%;
@@ -197,16 +201,15 @@ ul li{
 /* download section css */
 .download-container{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     max-width: 1000px;
-    margin: 0 auto;
-    gap: 40px;
+    margin: 50px auto;
+    gap: 80px;
 }
 .download-text{
     width: 48%;
     text-align: right;
-    margin-top: 150px;
-    margin-right: 80px;
-    margin-left: 20px;
 }
 .download-text h2{
     font-size: 1.8rem ;
@@ -214,6 +217,7 @@ ul li{
 }
 .download-img{
     width: 48%;
+    height: 490px;
 }
 .download-img img{
     width: 100%;
@@ -227,42 +231,7 @@ ul li{
     position: relative;
     bottom: 180px;
     right: 65px;
-    width: 180px;
-}
-/* play game section css */
-.play-game-container{
-    display: flex;
-    max-width: 1000px;
-    margin: 0 auto;
-    gap: 40px;
-}
-.paly-game-img{
-    width: 48%;
-}
-.paly-game-img img{
-    width: 100%;
-}
-.play-position-img{
-    position: relative;
-    left: 320px;
-    bottom: 150px;
     width: 200px;
-}
-.play-game-text{
-    width: 48%;
-    text-align: left;
-    margin-top: 150px;
-    /* margin-right: 80px; */
-    margin-left: 90px;
-}
-.play-game-text h2{
-    font-size: 1.8rem ;
-    margin-bottom: 20px;
-}
-.play-game-text .play{
-    background: linear-gradient(180deg, #F948B2 30%, #8758F1 100%);
-    color: transparent;
-    -webkit-background-clip: text;
 }
 /* career-section css */
 .career-section{
@@ -318,8 +287,8 @@ ul li{
 .games-list{
     max-width: 1000px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr) ;
+    display: flex;
+    flex-wrap: wrap;
     padding: 80px 10px;
     gap: 20px;
 }
@@ -329,6 +298,7 @@ ul li{
     gap: 10px;
     background-color: #FFF;
     border-radius: 25px;
+   padding: 5px 8px;
 }
 .game-item img{
     width: 40px;

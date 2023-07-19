@@ -1,13 +1,52 @@
-/* navbar responsive styles */
+/* small device responsive styles */
 @media screen and (max-width: 576px){
-      .menu-container, .menu{
+      .menu-container, .menu, .banner-container, .gamer-person, .games-card, .download-container, .play-game-container, .career-container{
         flex-direction: column;
+        gap: 40px;
       }
-      .menu{
-        margin-top: 30px;
+      .banner-text, .banner-img, .gamer-text, .gamer-img, .game-card, .download-text, .download-img, .paly-game-img, .career-text, .career-img{
+        width: 100%;
+        padding-left: 90px;
+        padding-right: 90px;
       }
-      .banner-container{
-        flex-direction: column;
-        flex-direction: row-reverse;
+      .banner-container, .play-game-container{
+        flex-direction: column-reverse;
       }
+      .gamer-person-section{
+        padding-top: 20px;
+      }
+      .gamer-text{
+        text-align: center;
+      }
+      .download-text, .play-game-text{
+        margin-top: 0px;
+        text-align: center;
+      }
+      .game-card p{
+        margin-top: 40px;
+      }
+      .play-position-img{
+        position: relative;
+        left: 180px;
+        bottom: 150px;
+        width: 180px;
+    }
+      .footer-list-1{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .footer-list-2{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+      }
+  
+}
+/* medium device responsive styles */
+@media screen and (min-width: 576px) and (max-width: 760px) {
+  .games-card{
+    flex-wrap: warp;
+  }
 }
